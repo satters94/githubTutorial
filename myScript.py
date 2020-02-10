@@ -5,6 +5,7 @@ def my_func(matrix_1, matrix_2):
     try:
         return matrix_1 * matrix_2
     except ValueError:
+        print("Matrices are not aligned")
         return None
 
 my_matrix = np.eye(4)
